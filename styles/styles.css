@@ -65,25 +65,21 @@ section {
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(104, 182, 27);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #8d3333;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: #4a768f;
 }
 
 .active {
@@ -133,4 +129,25 @@ section {
   font-size: 1.4rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+.header-content .left-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-content .left-header .h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 65%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }/*# sourceMappingURL=styles.css.map */
